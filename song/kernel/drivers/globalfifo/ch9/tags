@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUF_SIZE	aior.c	11;"	d	file:
+EXTRA_CFLAGS	Makefile	/^EXTRA_CFLAGS=-g -O0$/;"	m
+FIFO_CLEAR	globalfifo.c	18;"	d	file:
+GLOBALFIFO_MAJOR	globalfifo.c	19;"	d	file:
+GLOBALFIFO_SIZE	globalfifo.c	17;"	d	file:
+KVERS	Makefile	/^KVERS = $(shell uname -r)$/;"	m
+_GNU_SOURCE	aior.c	1;"	d	file:
+async_queue	globalfifo.c	/^	struct fasync_struct *async_queue;$/;"	m	struct:globalfifo_dev	typeref:struct:globalfifo_dev::fasync_struct	file:
+cdev	globalfifo.c	/^	struct cdev cdev;$/;"	m	struct:globalfifo_dev	typeref:struct:globalfifo_dev::cdev	file:
+current_len	globalfifo.c	/^	unsigned int current_len;$/;"	m	struct:globalfifo_dev	file:
+globalfifo_dev	globalfifo.c	/^struct globalfifo_dev {$/;"	s	file:
+globalfifo_devp	globalfifo.c	/^struct globalfifo_dev *globalfifo_devp;$/;"	v	typeref:struct:globalfifo_dev
+globalfifo_exit	globalfifo.c	/^module_exit(globalfifo_exit);$/;"	v
+globalfifo_exit	globalfifo.c	/^static void __exit globalfifo_exit(void)$/;"	f	file:
+globalfifo_fasync	globalfifo.c	/^static int globalfifo_fasync(int fd, struct file *filp, int mode)$/;"	f	file:
+globalfifo_fops	globalfifo.c	/^static const struct file_operations globalfifo_fops = {$/;"	v	typeref:struct:file_operations	file:
+globalfifo_init	globalfifo.c	/^module_init(globalfifo_init);$/;"	v
+globalfifo_init	globalfifo.c	/^static int __init globalfifo_init(void)$/;"	f	file:
+globalfifo_ioctl	globalfifo.c	/^static long globalfifo_ioctl(struct file *filp, unsigned int cmd,$/;"	f	file:
+globalfifo_major	globalfifo.c	/^static int globalfifo_major = GLOBALFIFO_MAJOR;$/;"	v	file:
+globalfifo_open	globalfifo.c	/^static int globalfifo_open(struct inode *inode, struct file *filp)$/;"	f	file:
+globalfifo_poll	globalfifo.c	/^static unsigned int globalfifo_poll(struct file *filp, poll_table * wait)$/;"	f	file:
+globalfifo_read	globalfifo.c	/^static ssize_t globalfifo_read(struct file *filp, char __user *buf,$/;"	f	file:
+globalfifo_release	globalfifo.c	/^static int globalfifo_release(struct inode *inode, struct file *filp)$/;"	f	file:
+globalfifo_setup_cdev	globalfifo.c	/^static void globalfifo_setup_cdev(struct globalfifo_dev *dev, int index)$/;"	f	file:
+globalfifo_write	globalfifo.c	/^static ssize_t globalfifo_write(struct file *filp, const char __user *buf,$/;"	f	file:
+main	aior.c	/^int main(int argc, char **argv)$/;"	f
+main	globalfifo_test.c	/^void main(void)$/;"	f
+mem	globalfifo.c	/^	unsigned char mem[GLOBALFIFO_SIZE];$/;"	m	struct:globalfifo_dev	file:
+mutex	globalfifo.c	/^	struct mutex mutex;$/;"	m	struct:globalfifo_dev	typeref:struct:globalfifo_dev::mutex	file:
+r_wait	globalfifo.c	/^	wait_queue_head_t r_wait;$/;"	m	struct:globalfifo_dev	file:
+signalio_handler	globalfifo_test.c	/^static void signalio_handler(int signum)$/;"	f	file:
+w_wait	globalfifo.c	/^	wait_queue_head_t w_wait;$/;"	m	struct:globalfifo_dev	file:
