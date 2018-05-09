@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/bt/btdrv/lxl/proc/proc.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds --build-id -o /mnt/hgfs/bt/btdrv/lxl/proc/proc.ko /mnt/hgfs/bt/btdrv/lxl/proc/proc.o /mnt/hgfs/bt/btdrv/lxl/proc/proc.mod.o

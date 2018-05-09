@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5	//
+KDIR	Makefile	/^KDIR := \/opt\/linux-2.6.32.2$/;"	m
+M	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+RCH	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+ROSS_COMPILE	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+SIMP_BLKDEV_BYTES	block.c	13;"	d	file:
+SIMP_BLKDEV_BYTES	blockerr.c	31;"	d	file:
+SIMP_BLKDEV_DEVICEMAJOR	block.c	12;"	d	file:
+SIMP_BLKDEV_DEVICEMAJOR	blockerr.c	27;"	d	file:
+SIMP_BLKDEV_DISKNAME	block.c	11;"	d	file:
+SIMP_BLKDEV_DISKNAME	blockerr.c	29;"	d	file:
+SIMP_BLKDEV_MAXPARTITIONS	block.c	14;"	d	file:
+__this_module	block.mod.c	/^struct module __this_module$/;"	v
+__used	block.mod.c	/^__used$/;"	v	file:
+m	Makefile	/^obj-m := block.o$/;"	m
+simp_blkdev_data	block.c	/^unsigned char *simp_blkdev_data;$/;"	v
+simp_blkdev_data	blockerr.c	/^unsigned char *simp_blkdev_data;$/;"	v
+simp_blkdev_disk	block.c	/^static struct gendisk *simp_blkdev_disk;$/;"	v	file:
+simp_blkdev_disk	blockerr.c	/^static struct gendisk *simp_blkdev_disk;$/;"	v	file:
+simp_blkdev_do_request	blockerr.c	/^static void simp_blkdev_do_request(struct request_queue *q)$/;"	f	file:
+simp_blkdev_exit	block.c	/^module_exit(simp_blkdev_exit);$/;"	v
+simp_blkdev_exit	block.c	/^static void __exit simp_blkdev_exit(void)$/;"	f	file:
+simp_blkdev_exit	blockerr.c	/^module_exit(simp_blkdev_exit);$/;"	v
+simp_blkdev_exit	blockerr.c	/^static void __exit simp_blkdev_exit(void)$/;"	f	file:
+simp_blkdev_fops	block.c	/^struct block_device_operations simp_blkdev_fops = {$/;"	v
+simp_blkdev_fops	blockerr.c	/^struct block_device_operations simp_blkdev_fops = {$/;"	v
+simp_blkdev_init	block.c	/^module_init(simp_blkdev_init);$/;"	v
+simp_blkdev_init	block.c	/^static int __init simp_blkdev_init(void)$/;"	f	file:
+simp_blkdev_init	blockerr.c	/^module_init(simp_blkdev_init);$/;"	v
+simp_blkdev_init	blockerr.c	/^static int __init simp_blkdev_init(void)$/;"	f	file:
+simp_blkdev_make_request	block.c	/^static int simp_blkdev_make_request(struct request_queue *q, struct bio *bio)$/;"	f	file:
+simp_blkdev_queue	block.c	/^static struct request_queue *simp_blkdev_queue;$/;"	v	file:
+simp_blkdev_queue	blockerr.c	/^static struct request_queue *simp_blkdev_queue;$/;"	v	file:

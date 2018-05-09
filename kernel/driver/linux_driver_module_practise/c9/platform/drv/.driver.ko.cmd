@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/ddm/platform/drv/driver.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds  -o /mnt/hgfs/ddm/platform/drv/driver.ko /mnt/hgfs/ddm/platform/drv/driver.o /mnt/hgfs/ddm/platform/drv/driver.mod.o

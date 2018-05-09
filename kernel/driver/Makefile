@@ -1,4 +1,4 @@
-obj-m:=cr4.o
+obj-m:=jbase.o
 KERNELDIR:=/lib/modules/$(shell uname -r)/build
 PWD:=$(shell pwd)
 all:

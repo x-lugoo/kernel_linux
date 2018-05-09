@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BROCK_DEV_NAME	brock.c	23;"	d	file:
+BROCK_H	brock.h	23;"	d
+BROCK_MAJOR	brock.h	26;"	d
+KDIR	Makefile	/^KDIR := \/opt\/linux-2.6.32.2$/;"	m
+__this_module	brock.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	brock.mod.c	/^__used$/;"	v	file:
+brock_exit	brock.c	/^module_exit(brock_exit);$/;"	v
+brock_exit	brock.c	/^static void brock_exit(void) {$/;"	f	file:	signature:(void)
+brock_fops	brock.c	/^struct file_operations brock_fops = {$/;"	v	typeref:struct:file_operations
+brock_init	brock.c	/^module_init(brock_init);$/;"	v
+brock_init	brock.c	/^static int __init brock_init(void) {$/;"	f	file:	signature:(void)
+brock_ioctl	brock.c	/^static int brock_ioctl(struct inode* inodp, struct file* filp,$/;"	f	file:	signature:(struct inode* inodp, struct file* filp, unsigned int cmd, unsigned long arg)
+brock_open	brock.c	/^static int brock_open(struct inode* inodp, struct file* filp) {$/;"	f	file:	signature:(struct inode* inodp, struct file* filp)
+brock_read	brock.c	/^static ssize_t brock_read(struct file* filp, char __user* buf, size_t size, loff_t* ppos) {$/;"	f	file:	signature:(struct file* filp, char __user* buf, size_t size, loff_t* ppos)
+brock_release	brock.c	/^static int brock_release(struct inode* inodp, struct file* filp) {$/;"	f	file:	signature:(struct inode* inodp, struct file* filp)
+brock_write	brock.c	/^static ssize_t brock_write(struct file* filp, const char __user* buf, size_t size, loff_t* ppos) {$/;"	f	file:	signature:(struct file* filp, const char __user* buf, size_t size, loff_t* ppos)
+canRead	brock.c	/^    bool canRead;$/;"	m	struct:wait_queue	file:	access:public
+canReadFlag	brock.c	/^bool canReadFlag;$/;"	v
+canWrite	brock.c	/^    bool canWrite;$/;"	m	struct:wait_queue	file:	access:public
+canWriteFlag	brock.c	/^bool canWriteFlag;$/;"	v
+main	app/bApp.c	/^int main(int argc, char* argv[]) {$/;"	f	signature:(int argc, char* argv[])
+misc	brock.c	/^static struct miscdevice misc = {$/;"	v	typeref:struct:miscdevice	file:
+obj-m	Makefile	/^obj-m := brock.o$/;"	m
+rq	brock.c	/^    wait_queue_head_t rq;$/;"	m	struct:wait_queue	file:	access:public
+waitQuene	brock.c	/^struct wait_queue waitQuene;$/;"	v	typeref:struct:wait_queue
+wait_queue	brock.c	/^struct wait_queue {$/;"	s	file:
+wait_queue::canRead	brock.c	/^    bool canRead;$/;"	m	struct:wait_queue	file:	access:public
+wait_queue::canWrite	brock.c	/^    bool canWrite;$/;"	m	struct:wait_queue	file:	access:public
+wait_queue::rq	brock.c	/^    wait_queue_head_t rq;$/;"	m	struct:wait_queue	file:	access:public
+wait_queue::wq	brock.c	/^    wait_queue_head_t wq;$/;"	m	struct:wait_queue	file:	access:public
+wq	brock.c	/^    wait_queue_head_t wq;$/;"	m	struct:wait_queue	file:	access:public

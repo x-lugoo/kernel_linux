@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5	//
+GPBCON_ADDR	simled.c	15;"	d	file:
+GPBDAT_ADDR	simled.c	17;"	d	file:
+IMM32GPBCON	simled.c	/^u32		*IMM32GPBCON;$/;"	v
+IMM32GPBDAT	simled.c	/^u32           *IMM32GPBDAT;$/;"	v
+KDIR	Makefile	/^KDIR := \/opt\/linux-2.6.32.2$/;"	m
+LED_MAJOR	simled.h	6;"	d
+M	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+RCH	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+ROSS_COMPILE	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+_LEDDEV_H_	simled.h	3;"	d
+__this_module	simled.mod.c	/^struct module __this_module$/;"	v
+__used	simled.mod.c	/^__used$/;"	v	file:
+cdev	simled.c	/^struct cdev cdev; $/;"	v
+data	simled.h	/^  char *data;                      $/;"	m	struct:led_dev
+g_mainthread_running	app-led.c	/^int g_mainthread_running = 1;$/;"	v
+led_dev	simled.h	/^struct led_dev                                     $/;"	s
+led_devp	simled.c	/^struct led_dev *led_devp; $/;"	v
+led_fops	simled.c	/^static const struct file_operations led_fops =$/;"	v	file:
+led_ioctl	simled.c	/^static int led_ioctl(struct inode *inodp, struct file *filp,$/;"	f	file:
+led_major	simled.c	/^static int led_major = LED_MAJOR;$/;"	v	file:
+led_open	simled.c	/^int led_open(struct inode *inode, struct file *filp)$/;"	f
+led_release	simled.c	/^int led_release(struct inode *inode, struct file *filp)$/;"	f
+leddev_exit	simled.c	/^module_exit(leddev_exit);$/;"	v
+leddev_exit	simled.c	/^static void leddev_exit(void)$/;"	f	file:
+leddev_init	simled.c	/^module_init(leddev_init);$/;"	v
+leddev_init	simled.c	/^static int leddev_init(void)$/;"	f	file:
+m	Makefile	/^obj-m := simled.o$/;"	m
+main	app-led.c	/^int main(int argc,char** argv)$/;"	f
+size	simled.h	/^  unsigned long size;       $/;"	m	struct:led_dev
+stop_handler	app-led.c	/^void stop_handler( int signum )$/;"	f

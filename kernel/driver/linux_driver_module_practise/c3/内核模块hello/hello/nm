@@ -1,0 +1,26 @@
+
+hello.ko:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <cleanup_module>:
+   0:	e1a0c00d 	mov	ip, sp
+   4:	e92dd800 	push	{fp, ip, lr, pc}
+   8:	e24cb004 	sub	fp, ip, #4
+   c:	e59f0004 	ldr	r0, [pc, #4]	; 18 <cleanup_module+0x18>
+  10:	ebfffffe 	bl	0 <printk>
+  14:	e89da800 	ldm	sp, {fp, sp, pc}
+  18:	00000000 	.word	0x00000000
+
+Disassembly of section .init.text:
+
+00000000 <init_module>:
+   0:	e1a0c00d 	mov	ip, sp
+   4:	e92dd800 	push	{fp, ip, lr, pc}
+   8:	e24cb004 	sub	fp, ip, #4
+   c:	e59f0008 	ldr	r0, [pc, #8]	; 1c <init_module+0x1c>
+  10:	ebfffffe 	bl	0 <printk>
+  14:	e3a00000 	mov	r0, #0
+  18:	e89da800 	ldm	sp, {fp, sp, pc}
+  1c:	00000008 	.word	0x00000008

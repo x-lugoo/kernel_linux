@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5	//
+BROCK_DEV_NAME	brock.c	22;"	d	file:
+BROCK_H	brock.h	23;"	d
+BROCK_MAJOR	brock.h	26;"	d
+KDIR	Makefile	/^KDIR := \/opt\/linux-2.6.32.2$/;"	m
+M	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+RCH	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+ROSS_COMPILE	Makefile	/^	make -C $(KDIR) M=$(PWD) modules ARCH=arm CROSS_COMPILE=arm-linux-$/;"	m
+brock_exit	brock.c	/^module_exit(brock_exit);$/;"	v
+brock_exit	brock.c	/^static void brock_exit(void)$/;"	f	file:
+brock_fops	brock.c	/^struct file_operations brock_fops =$/;"	v
+brock_init	brock.c	/^module_init(brock_init);$/;"	v
+brock_init	brock.c	/^static int __init brock_init(void)$/;"	f	file:
+brock_ioctl	brock.c	/^static int brock_ioctl(struct inode *inodp, struct file *filp, $/;"	f	file:
+brock_open	brock.c	/^static int brock_open(struct inode *inodp, struct file *filp)$/;"	f	file:
+brock_read	brock.c	/^static ssize_t brock_read(struct file *filp, char __user *buf, size_t size, loff_t *ppos)$/;"	f	file:
+brock_release	brock.c	/^static int brock_release(struct inode *inodp, struct file *filp)$/;"	f	file:
+brock_write	brock.c	/^static ssize_t brock_write(struct file *filp, const char __user *buf, size_t size, loff_t *ppos)$/;"	f	file:
+canRead	brock.c	/^    bool canRead;$/;"	m	struct:wait_queue	file:
+canReadFlag	brock.c	/^    bool canReadFlag;   $/;"	v
+canWrite	brock.c	/^    bool canWrite;$/;"	m	struct:wait_queue	file:
+canWriteFlag	brock.c	/^    bool canWriteFlag;                      $/;"	v
+m	Makefile	/^obj-m := brock.o$/;"	m
+main	app/bApp.c	/^int main(int argc,char* argv[])$/;"	f
+misc	brock.c	/^static struct miscdevice misc = {$/;"	v	file:
+rq	brock.c	/^    wait_queue_head_t rq;$/;"	m	struct:wait_queue	file:
+waitQuene	brock.c	/^struct wait_queue waitQuene;$/;"	v
+wait_queue	brock.c	/^struct wait_queue$/;"	s	file:
+wq	brock.c	/^    wait_queue_head_t wq; $/;"	m	struct:wait_queue	file:

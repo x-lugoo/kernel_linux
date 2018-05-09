@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/E/bt/test/1/memdev.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds  -o /mnt/hgfs/E/bt/test/1/memdev.ko /mnt/hgfs/E/bt/test/1/memdev.o /mnt/hgfs/E/bt/test/1/memdev.mod.o

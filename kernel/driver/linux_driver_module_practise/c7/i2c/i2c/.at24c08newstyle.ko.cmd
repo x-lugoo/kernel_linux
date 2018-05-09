@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/px/sam/i2c/at24c08newstyle.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds  -o /mnt/hgfs/px/sam/i2c/at24c08newstyle.ko /mnt/hgfs/px/sam/i2c/at24c08newstyle.o /mnt/hgfs/px/sam/i2c/at24c08newstyle.mod.o

@@ -1,0 +1,251 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLK_DEV_NAME	xcbase.c	34;"	d	file:
+BUS_ADD	tbase.h	35;"	d
+BUS_FILE	tbase.h	47;"	d
+BUS_REMOVE	tbase.h	37;"	d
+BUS_RESCAN	tbase.h	46;"	d
+CLASSDEV_REG	tbase.h	52;"	d
+CLASSINT_REG	tbase.h	53;"	d
+CLASS_FILE	tbase.h	50;"	d
+CLASS_GET	tbase.h	51;"	d
+CLASS_REG	tbase.h	48;"	d
+CLASS_UNREG	tbase.h	49;"	d
+CREATE_FILE	tbase.h	43;"	d
+DEVICE_ATTR	xcbase.c	/^static DEVICE_ATTR(result, S_IRUSR, sys_result, NULL);$/;"	p	file:
+DEVICE_ATTR	xcbase.c	/^static DEVICE_ATTR(tcase, S_IWUSR, NULL, sys_tcase);$/;"	p	file:
+DEVICE_NAME	tbase.h	23;"	d
+DEV_FILE	tbase.h	45;"	d
+DEV_PROBE	tbase.h	32;"	d
+DEV_SUSPEND	tbase.h	44;"	d
+DRV_REG	tbase.h	40;"	d
+DRV_UNREG	tbase.h	41;"	d
+FIND_BUS	tbase.h	36;"	d
+GET_DRV	tbase.h	38;"	d
+KERNELDIR	Makefile	/^KERNELDIR:=\/lib\/modules\/$(shell uname -r)\/build$/;"	m
+MAG_NUM	tbase.h	24;"	d
+MAX_MAJOR	xcbase.c	35;"	d	file:
+Major	jbase.c	/^static int Major = TBASEMAJOR;$/;"	v	file:
+Major	tbase.c	/^static int Major = TBASEMAJOR;$/;"	v	file:
+PUT_DRV	tbase.h	39;"	d
+PWD	Makefile	/^PWD:=$(shell pwd)$/;"	m
+REG_DEVICE	tbase.h	33;"	d
+REG_FIRM	tbase.h	42;"	d
+SYSDEV_CLS_REG	tbase.h	56;"	d
+SYSDEV_CLS_UNREG	tbase.h	57;"	d
+SYSDEV_REG	tbase.h	54;"	d
+SYSDEV_UNREG	tbase.h	55;"	d
+TBASEMAJOR	tbase.h	30;"	d
+TMOD_DRIVER_NAME	jbase.c	/^MODULE_DESCRIPTION(TMOD_DRIVER_NAME);$/;"	v
+TMOD_DRIVER_NAME	tbase.c	/^MODULE_DESCRIPTION(TMOD_DRIVER_NAME);$/;"	v
+TMOD_DRIVER_NAME	tbase.h	22;"	d
+UNREG_DEVICE	tbase.h	34;"	d
+__this_module	xcbase.mod.c	/^__visible struct module __this_module$/;"	v	typeref:struct:module
+__used	xcbase.mod.c	/^__used$/;"	v	file:
+__used	xcbase.mod.c	/^__used$/;"	v	typeref:struct:____versions	file:
+clean_cr4_module	cr4.c	/^module_exit(clean_cr4_module);$/;"	v
+clean_cr4_module	cr4.c	/^void clean_cr4_module( void )$/;"	f	signature:( void )
+clean_mm_module	mm/mm.c	/^module_exit(clean_mm_module);$/;"	v
+clean_mm_module	mm/mm.c	/^void clean_mm_module( void )$/;"	f	signature:( void )
+clean_task_list_module	tasklist.c	/^module_exit(clean_task_list_module);$/;"	v
+clean_task_list_module	tasklist.c	/^void clean_task_list_module( void )$/;"	f	signature:( void )
+clean_vma_module	vma/vma.c	/^module_exit(clean_vma_module);$/;"	v
+clean_vma_module	vma/vma.c	/^void clean_vma_module( void )$/;"	f	signature:( void )
+cleanup_module	announce.c	/^void cleanup_module( void )$/;"	f	signature:( void )
+cr4_module	cr4.c	/^int cr4_module( void )$/;"	f	signature:( void )
+cr4_module	cr4.c	/^module_init(cr4_module);$/;"	v
+device_release	xcbase.c	/^static void device_release(struct device *dev)$/;"	f	file:	signature:(struct device *dev)
+filename	vma/domalloc.cpp	/^char filename[] = "\/proc\/vma";$/;"	v
+in_data	tbase.h	/^        caddr_t in_data;        \/\/ input data$/;"	m	struct:tmod_interface	access:public
+in_len	tbase.h	/^	int     in_len;         \/\/ input data length$/;"	m	struct:tmod_interface	access:public
+init_module	announce.c	/^int init_module( void )$/;"	f	signature:( void )
+ltp_mod	jbase.c	/^static ltpmod_user_t ltp_mod;$/;"	v	file:
+ltp_mod	tbase.c	/^static ltpmod_user_t ltp_mod;$/;"	v	file:
+main	mm/mmake.cpp	/^int main( int argc, char **argv )$/;"	f	signature:( int argc, char **argv )
+main	mmfork.cpp	/^int main( int argc, char **argv )$/;"	f	signature:( int argc, char **argv )
+main	vma/domalloc.cpp	/^int main( int argc, char **argv )$/;"	f	signature:( int argc, char **argv )
+mm_module	mm/mm.c	/^int mm_module( void )$/;"	f	signature:( void )
+mm_module	mm/mm.c	/^module_init(mm_module);$/;"	v
+modname	announce.c	/^char modname[] = "announce";	\/\/ for printing module name$/;"	v
+modname	cr4.c	/^static char modname[] = "cr4";$/;"	v	file:
+modname	mm/mm.c	/^static char modname[] = "mm";$/;"	v	file:
+modname	tasklist.c	/^static char modname[] = "task_list";$/;"	v	file:
+modname	vma/vma.c	/^static char modname[] = "vma";$/;"	v	file:
+msg	announce.c	/^char msg[ 80 ];			\/\/ buffer for announcements$/;"	v
+my_get_info	cr4.c	/^static ssize_t my_get_info(struct file *filp,char __user *buf,$/;"	f	file:	signature:(struct file *filp,char __user *buf, size_t count,loff_t *ppos)
+my_get_info	mm/mm.c	/^static ssize_t my_get_info(struct file *filp,char __user *buf,$/;"	f	file:	signature:(struct file *filp,char __user *buf, size_t count,loff_t *ppos)
+my_get_info	tasklist.c	/^static ssize_t my_get_info(struct file *filp,char __user *buf,$/;"	f	file:	signature:(struct file *filp,char __user *buf, size_t count,loff_t *ppos)
+my_get_info	vma/vma.c	/^static ssize_t my_get_info(struct file *filp,char __user *buf,$/;"	f	file:	signature:(struct file *filp,char __user *buf, size_t count,loff_t *ppos)
+obj-m	Makefile	/^obj-m:=jbase.o$/;"	m
+out_data	tbase.h	/^        caddr_t out_data;       \/\/ output data$/;"	m	struct:tmod_interface	access:public
+out_len	tbase.h	/^        int     out_len;        \/\/ output data length$/;"	m	struct:tmod_interface	access:public
+out_rc	tbase.h	/^        int     out_rc;         \/\/ return code from the test$/;"	m	struct:tmod_interface	access:public
+prk_debug	xcbase.c	41;"	d	file:
+prk_err	xcbase.c	37;"	d	file:
+prk_info	xcbase.c	39;"	d	file:
+result_str	xcbase.c	69;"	d	file:
+show_task_mm_struct_info	mmfork.cpp	/^void show_task_mm_struct_info( void )$/;"	f	signature:( void )
+store_new_id	jbase.c	/^store_new_id(struct device_driver *driver, const char *buf, size_t count)$/;"	f	file:	signature:(struct device_driver *driver, const char *buf, size_t count)
+store_new_id	tbase.c	/^store_new_id(struct device_driver *driver, const char *buf, size_t count)$/;"	f	file:	signature:(struct device_driver *driver, const char *buf, size_t count)
+sys_result	xcbase.c	/^static ssize_t sys_result(struct device *dev,$/;"	f	file:	signature:(struct device *dev, struct device_attribute *attr, char *buf)
+sys_tcase	xcbase.c	/^static ssize_t sys_tcase(struct device *dev,$/;"	f	file:	signature:(struct device *dev, struct device_attribute *attr, const char *buf, size_t count)
+task_list_module	tasklist.c	/^int task_list_module( void )$/;"	f	signature:( void )
+task_list_module	tasklist.c	/^module_init(task_list_module);$/;"	v
+tbase_close	jbase.c	/^static int tbase_close(struct inode *, struct file *);$/;"	p	file:	signature:(struct inode *, struct file *)
+tbase_close	jbase.c	/^static int tbase_close(struct inode *ino, struct file *f)$/;"	f	file:	signature:(struct inode *ino, struct file *f)
+tbase_close	tbase.c	/^static int tbase_close(struct inode *, struct file *);$/;"	p	file:	signature:(struct inode *, struct file *)
+tbase_close	tbase.c	/^static int tbase_close(struct inode *ino, struct file *f)$/;"	f	file:	signature:(struct inode *ino, struct file *f)
+tbase_exit_module	jbase.c	/^static void tbase_exit_module(void)$/;"	f	file:	signature:(void)
+tbase_exit_module	tbase.c	/^static void tbase_exit_module(void)$/;"	f	file:	signature:(void)
+tbase_fops	jbase.c	/^static struct file_operations tbase_fops = {$/;"	v	typeref:struct:file_operations	file:
+tbase_fops	tbase.c	/^static struct file_operations tbase_fops = {$/;"	v	typeref:struct:file_operations	file:
+tbase_init_module	jbase.c	/^static int tbase_init_module(void)$/;"	f	file:	signature:(void)
+tbase_init_module	tbase.c	/^static int tbase_init_module(void)$/;"	f	file:	signature:(void)
+tbase_ioctl	jbase.c	/^static int tbase_ioctl(struct inode *, struct file *, unsigned int,$/;"	p	file:	signature:(struct inode *, struct file *, unsigned int, unsigned long)
+tbase_ioctl	jbase.c	/^static int tbase_ioctl(struct inode *ino, struct file *f,$/;"	f	file:	signature:(struct inode *ino, struct file *f, unsigned int cmd, unsigned long l)
+tbase_ioctl	tbase.c	/^static int tbase_ioctl(struct inode *, struct file *, unsigned int,$/;"	p	file:	signature:(struct inode *, struct file *, unsigned int, unsigned long)
+tbase_ioctl	tbase.c	/^static int tbase_ioctl(struct inode *ino, struct file *f,$/;"	f	file:	signature:(struct inode *ino, struct file *f, unsigned int cmd, unsigned long l)
+tbase_open	jbase.c	/^static int tbase_open(struct inode *, struct file *);$/;"	p	file:	signature:(struct inode *, struct file *)
+tbase_open	jbase.c	/^static int tbase_open(struct inode *ino, struct file *f)$/;"	f	file:	signature:(struct inode *ino, struct file *f)
+tbase_open	tbase.c	/^static int tbase_open(struct inode *, struct file *);$/;"	p	file:	signature:(struct inode *, struct file *)
+tbase_open	tbase.c	/^static int tbase_open(struct inode *ino, struct file *f)$/;"	f	file:	signature:(struct inode *ino, struct file *f)
+tc01	xcbase.c	/^static int tc01(void)$/;"	f	file:	signature:(void)
+tc02	xcbase.c	/^static int tc02(void)$/;"	f	file:	signature:(void)
+tc03	xcbase.c	/^static int tc03(void)$/;"	f	file:	signature:(void)
+tc04	xcbase.c	/^static int tc04(void)$/;"	f	file:	signature:(void)
+tc05	xcbase.c	/^static int tc05(void)$/;"	f	file:	signature:(void)
+tc06	xcbase.c	/^static int tc06(void)$/;"	f	file:	signature:(void)
+tc07	xcbase.c	/^static int tc07(void)$/;"	f	file:	signature:(void)
+tc08	xcbase.c	/^static int tc08(void)$/;"	f	file:	signature:(void)
+tc09	xcbase.c	/^static int tc09(void)$/;"	f	file:	signature:(void)
+tdev	xcbase.c	/^static struct device tdev = {$/;"	v	typeref:struct:device	file:
+test_bus_add	jbase.c	/^static int test_bus_add()$/;"	f	file:
+test_bus_add	jbase.c	/^static int test_bus_add(void);$/;"	p	file:	signature:(void)
+test_bus_add	tbase.c	/^static int test_bus_add()$/;"	f	file:
+test_bus_add	tbase.c	/^static int test_bus_add(void);$/;"	p	file:	signature:(void)
+test_bus_file	jbase.c	/^static int test_bus_file()$/;"	f	file:
+test_bus_file	jbase.c	/^static int test_bus_file(void);$/;"	p	file:	signature:(void)
+test_bus_file	tbase.c	/^static int test_bus_file()$/;"	f	file:
+test_bus_file	tbase.c	/^static int test_bus_file(void);$/;"	p	file:	signature:(void)
+test_bus_rescan	jbase.c	/^static int test_bus_rescan()$/;"	f	file:
+test_bus_rescan	jbase.c	/^static int test_bus_rescan(void);$/;"	p	file:	signature:(void)
+test_bus_rescan	tbase.c	/^static int test_bus_rescan()$/;"	f	file:
+test_bus_rescan	tbase.c	/^static int test_bus_rescan(void);$/;"	p	file:	signature:(void)
+test_bus_type	jbase.c	/^struct bus_type test_bus_type = {$/;"	v	typeref:struct:bus_type
+test_bus_type	tbase.c	/^struct bus_type test_bus_type = {$/;"	v	typeref:struct:bus_type
+test_class	jbase.c	/^struct class test_class = {$/;"	v	typeref:struct:class
+test_class	tbase.c	/^struct class test_class = {$/;"	v	typeref:struct:class
+test_class_dev	jbase.c	/^struct class_device test_class_dev = {$/;"	v	typeref:struct:class_device
+test_class_dev	tbase.c	/^struct class_device test_class_dev = {$/;"	v	typeref:struct:class_device
+test_class_file	jbase.c	/^static int test_class_file()$/;"	f	file:
+test_class_file	jbase.c	/^static int test_class_file(void);$/;"	p	file:	signature:(void)
+test_class_file	tbase.c	/^static int test_class_file()$/;"	f	file:
+test_class_file	tbase.c	/^static int test_class_file(void);$/;"	p	file:	signature:(void)
+test_class_get	jbase.c	/^static int test_class_get()$/;"	f	file:
+test_class_get	jbase.c	/^static int test_class_get(void);$/;"	p	file:	signature:(void)
+test_class_get	tbase.c	/^static int test_class_get()$/;"	f	file:
+test_class_get	tbase.c	/^static int test_class_get(void);$/;"	p	file:	signature:(void)
+test_class_hotplug	jbase.c	/^int test_class_hotplug(struct class_device *dev, char **envp,$/;"	f	signature:(struct class_device *dev, char **envp, int num_envp, char *buffer, int buffer_size)
+test_class_hotplug	tbase.c	/^int test_class_hotplug(struct class_device *dev, char **envp,$/;"	f	signature:(struct class_device *dev, char **envp, int num_envp, char *buffer, int buffer_size)
+test_class_reg	jbase.c	/^static int test_class_reg()$/;"	f	file:
+test_class_reg	jbase.c	/^static int test_class_reg(void);$/;"	p	file:	signature:(void)
+test_class_reg	tbase.c	/^static int test_class_reg()$/;"	f	file:
+test_class_reg	tbase.c	/^static int test_class_reg(void);$/;"	p	file:	signature:(void)
+test_class_release	jbase.c	/^static void test_class_release(struct class_device *class_dev)$/;"	f	file:	signature:(struct class_device *class_dev)
+test_class_release	tbase.c	/^static void test_class_release(struct class_device *class_dev)$/;"	f	file:	signature:(struct class_device *class_dev)
+test_classdev_reg	jbase.c	/^static int test_classdev_reg()$/;"	f	file:
+test_classdev_reg	jbase.c	/^static int test_classdev_reg(void);$/;"	p	file:	signature:(void)
+test_classdev_reg	tbase.c	/^static int test_classdev_reg()$/;"	f	file:
+test_classdev_reg	tbase.c	/^static int test_classdev_reg(void);$/;"	p	file:	signature:(void)
+test_classint_reg	jbase.c	/^static int test_classint_reg()$/;"	f	file:
+test_classint_reg	jbase.c	/^static int test_classint_reg(void);$/;"	p	file:	signature:(void)
+test_classint_reg	tbase.c	/^static int test_classint_reg()$/;"	f	file:
+test_classint_reg	tbase.c	/^static int test_classint_reg(void);$/;"	p	file:	signature:(void)
+test_create_file	jbase.c	/^static int test_create_file()$/;"	f	file:
+test_create_file	jbase.c	/^static int test_create_file(void);$/;"	p	file:	signature:(void)
+test_create_file	tbase.c	/^static int test_create_file()$/;"	f	file:
+test_create_file	tbase.c	/^static int test_create_file(void);$/;"	p	file:	signature:(void)
+test_dev_file	jbase.c	/^static int test_dev_file()$/;"	f	file:
+test_dev_file	jbase.c	/^static int test_dev_file(void);$/;"	p	file:	signature:(void)
+test_dev_file	tbase.c	/^static int test_dev_file()$/;"	f	file:
+test_dev_file	tbase.c	/^static int test_dev_file(void);$/;"	p	file:	signature:(void)
+test_dev_probe	jbase.c	/^int test_dev_probe(struct device *dev)$/;"	f	signature:(struct device *dev)
+test_dev_probe	tbase.c	/^int test_dev_probe(struct device *dev)$/;"	f	signature:(struct device *dev)
+test_dev_remove	jbase.c	/^int test_dev_remove(struct device *dev)$/;"	f	signature:(struct device *dev)
+test_dev_remove	tbase.c	/^int test_dev_remove(struct device *dev)$/;"	f	signature:(struct device *dev)
+test_dev_suspend	jbase.c	/^static int test_dev_suspend()$/;"	f	file:
+test_dev_suspend	jbase.c	/^static int test_dev_suspend(void);$/;"	p	file:	signature:(void)
+test_dev_suspend	tbase.c	/^static int test_dev_suspend()$/;"	f	file:
+test_dev_suspend	tbase.c	/^static int test_dev_suspend(void);$/;"	p	file:	signature:(void)
+test_device	jbase.c	/^struct device test_device = {$/;"	v	typeref:struct:device
+test_device	jbase.c	/^struct device test_device;$/;"	v	typeref:struct:device
+test_device	tbase.c	/^struct device test_device = {$/;"	v	typeref:struct:device
+test_device	tbase.c	/^struct device test_device;$/;"	v	typeref:struct:device
+test_device_match	jbase.c	/^static int test_device_match(struct device *dev, struct device_driver *drv)$/;"	f	file:	signature:(struct device *dev, struct device_driver *drv)
+test_device_match	tbase.c	/^static int test_device_match(struct device *dev, struct device_driver *drv)$/;"	f	file:	signature:(struct device *dev, struct device_driver *drv)
+test_device_register	jbase.c	/^static int test_device_register()$/;"	f	file:
+test_device_register	jbase.c	/^static int test_device_register(void);$/;"	p	file:	signature:(void)
+test_device_register	tbase.c	/^static int test_device_register()$/;"	f	file:
+test_device_register	tbase.c	/^static int test_device_register(void);$/;"	p	file:	signature:(void)
+test_device_unregister	jbase.c	/^static int test_device_unregister()$/;"	f	file:
+test_device_unregister	jbase.c	/^static int test_device_unregister(void);$/;"	p	file:	signature:(void)
+test_device_unregister	tbase.c	/^static int test_device_unregister()$/;"	f	file:
+test_device_unregister	tbase.c	/^static int test_device_unregister(void);$/;"	p	file:	signature:(void)
+test_driver	jbase.c	/^struct device_driver test_driver = {$/;"	v	typeref:struct:device_driver
+test_driver	jbase.c	/^struct device_driver test_driver;$/;"	v	typeref:struct:device_driver
+test_driver	tbase.c	/^struct device_driver test_driver = {$/;"	v	typeref:struct:device_driver
+test_driver	tbase.c	/^struct device_driver test_driver;$/;"	v	typeref:struct:device_driver
+test_exit_module	xcbase.c	/^module_exit(test_exit_module);$/;"	v
+test_exit_module	xcbase.c	/^static void test_exit_module(void)$/;"	f	file:	signature:(void)
+test_get_drv	jbase.c	/^static int test_get_drv()$/;"	f	file:
+test_get_drv	jbase.c	/^static int test_get_drv(void);$/;"	p	file:	signature:(void)
+test_get_drv	tbase.c	/^static int test_get_drv()$/;"	f	file:
+test_get_drv	tbase.c	/^static int test_get_drv(void);$/;"	p	file:	signature:(void)
+test_init_module	xcbase.c	/^module_init(test_init_module);$/;"	v
+test_init_module	xcbase.c	/^static int test_init_module(void)$/;"	f	file:	signature:(void)
+test_interface	jbase.c	/^struct class_interface test_interface = {$/;"	v	typeref:struct:class_interface
+test_interface	tbase.c	/^struct class_interface test_interface = {$/;"	v	typeref:struct:class_interface
+test_intf_add	jbase.c	/^int test_intf_add(struct class_device *class_dev)$/;"	f	signature:(struct class_device *class_dev)
+test_intf_add	tbase.c	/^int test_intf_add(struct class_device *class_dev)$/;"	f	signature:(struct class_device *class_dev)
+test_intf_rem	jbase.c	/^void test_intf_rem(struct class_device *class_dev)$/;"	f	signature:(struct class_device *class_dev)
+test_intf_rem	tbase.c	/^void test_intf_rem(struct class_device *class_dev)$/;"	f	signature:(struct class_device *class_dev)
+test_proc	cr4.c	/^static const struct file_operations test_proc = $/;"	v	typeref:struct:file_operations	file:
+test_proc	mm/mm.c	/^static const struct file_operations test_proc = $/;"	v	typeref:struct:file_operations	file:
+test_proc	tasklist.c	/^static const struct file_operations test_proc = $/;"	v	typeref:struct:file_operations	file:
+test_proc	vma/vma.c	/^static const struct file_operations test_proc = $/;"	v	typeref:struct:file_operations	file:
+test_put_drv	jbase.c	/^static int test_put_drv()$/;"	f	file:
+test_put_drv	jbase.c	/^static int test_put_drv(void);$/;"	p	file:	signature:(void)
+test_put_drv	tbase.c	/^static int test_put_drv()$/;"	f	file:
+test_put_drv	tbase.c	/^static int test_put_drv(void);$/;"	p	file:	signature:(void)
+test_reg_firm	jbase.c	/^static int test_reg_firm()$/;"	f	file:
+test_reg_firm	jbase.c	/^static int test_reg_firm(void);$/;"	p	file:	signature:(void)
+test_reg_firm	tbase.c	/^static int test_reg_firm()$/;"	f	file:
+test_reg_firm	tbase.c	/^static int test_reg_firm(void);$/;"	p	file:	signature:(void)
+test_result	xcbase.c	/^static int test_result;$/;"	v	file:
+test_resume	jbase.c	/^int test_resume(struct sys_device *dev)$/;"	f	signature:(struct sys_device *dev)
+test_resume	tbase.c	/^int test_resume(struct sys_device *dev)$/;"	f	signature:(struct sys_device *dev)
+test_sys_device	jbase.c	/^struct sys_device test_sys_device = {$/;"	v	typeref:struct:sys_device
+test_sys_device	tbase.c	/^struct sys_device test_sys_device = {$/;"	v	typeref:struct:sys_device
+test_sysclass	jbase.c	/^struct sysdev_class test_sysclass = {$/;"	v	typeref:struct:sysdev_class
+test_sysclass	tbase.c	/^struct sysdev_class test_sysclass = {$/;"	v	typeref:struct:sysdev_class
+test_sysdev_cls_reg	jbase.c	/^static int test_sysdev_cls_reg()$/;"	f	file:
+test_sysdev_cls_reg	jbase.c	/^static int test_sysdev_cls_reg(void);$/;"	p	file:	signature:(void)
+test_sysdev_cls_reg	tbase.c	/^static int test_sysdev_cls_reg()$/;"	f	file:
+test_sysdev_cls_reg	tbase.c	/^static int test_sysdev_cls_reg(void);$/;"	p	file:	signature:(void)
+test_sysdev_reg	jbase.c	/^static int test_sysdev_reg()$/;"	f	file:
+test_sysdev_reg	jbase.c	/^static int test_sysdev_reg(void);$/;"	p	file:	signature:(void)
+test_sysdev_reg	tbase.c	/^static int test_sysdev_reg()$/;"	f	file:
+test_sysdev_reg	tbase.c	/^static int test_sysdev_reg(void);$/;"	p	file:	signature:(void)
+tmod_interface	tbase.h	/^struct tmod_interface {$/;"	s
+tmod_interface::in_data	tbase.h	/^        caddr_t in_data;        \/\/ input data$/;"	m	struct:tmod_interface	access:public
+tmod_interface::in_len	tbase.h	/^	int     in_len;         \/\/ input data length$/;"	m	struct:tmod_interface	access:public
+tmod_interface::out_data	tbase.h	/^        caddr_t out_data;       \/\/ output data$/;"	m	struct:tmod_interface	access:public
+tmod_interface::out_len	tbase.h	/^        int     out_len;        \/\/ output data length$/;"	m	struct:tmod_interface	access:public
+tmod_interface::out_rc	tbase.h	/^        int     out_rc;         \/\/ return code from the test$/;"	m	struct:tmod_interface	access:public
+tmod_interface_t	tbase.h	/^typedef struct tmod_interface tmod_interface_t;$/;"	t	typeref:struct:tmod_interface
+vma_module	vma/vma.c	/^int vma_module( void )$/;"	f	signature:( void )
+vma_module	vma/vma.c	/^module_init(vma_module);$/;"	v

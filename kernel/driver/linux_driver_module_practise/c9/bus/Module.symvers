@@ -1,0 +1,2 @@
+0xdeee9efc	my_bus_type	/home/jeff/linux_kernel_driver/example/linux_driver_module_practise/c9/bus/bus	EXPORT_SYMBOL
+0x686b4c9a	my_bus	/home/jeff/linux_kernel_driver/example/linux_driver_module_practise/c9/bus/bus	EXPORT_SYMBOL

@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/bt/test/ledmul/simple/simled.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds --build-id -o /mnt/hgfs/bt/test/ledmul/simple/simled.ko /mnt/hgfs/bt/test/ledmul/simple/simled.o /mnt/hgfs/bt/test/ledmul/simple/simled.mod.o

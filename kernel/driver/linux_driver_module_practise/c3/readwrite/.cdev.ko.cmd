@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/bt/test/char/cdev/cdev.ko := arm-linux-ld -EL -r  -T /opt/linux-2.6.32.2/scripts/module-common.lds  -o /mnt/hgfs/bt/test/char/cdev/cdev.ko /mnt/hgfs/bt/test/char/cdev/cdev.o /mnt/hgfs/bt/test/char/cdev/cdev.mod.o

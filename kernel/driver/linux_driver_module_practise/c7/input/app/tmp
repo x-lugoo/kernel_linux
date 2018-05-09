@@ -1,0 +1,363 @@
+
+key_app:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+0000838c <_init>:
+    838c:	e92d4008 	push	{r3, lr}
+    8390:	eb000032 	bl	8460 <call_gmon_start>
+    8394:	e8bd8008 	pop	{r3, pc}
+
+Disassembly of section .plt:
+
+00008398 <.plt>:
+    8398:	e52de004 	push	{lr}		; (str lr, [sp, #-4]!)
+    839c:	e59fe004 	ldr	lr, [pc, #4]	; 83a8 <_init+0x1c>
+    83a0:	e08fe00e 	add	lr, pc, lr
+    83a4:	e5bef008 	ldr	pc, [lr, #8]!
+    83a8:	00008c58 	.word	0x00008c58
+    83ac:	e28fc600 	add	ip, pc, #0
+    83b0:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83b4:	e5bcfc58 	ldr	pc, [ip, #3160]!	; 0xc58
+    83b8:	e28fc600 	add	ip, pc, #0
+    83bc:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83c0:	e5bcfc50 	ldr	pc, [ip, #3152]!	; 0xc50
+    83c4:	e28fc600 	add	ip, pc, #0
+    83c8:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83cc:	e5bcfc48 	ldr	pc, [ip, #3144]!	; 0xc48
+    83d0:	e28fc600 	add	ip, pc, #0
+    83d4:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83d8:	e5bcfc40 	ldr	pc, [ip, #3136]!	; 0xc40
+    83dc:	e28fc600 	add	ip, pc, #0
+    83e0:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83e4:	e5bcfc38 	ldr	pc, [ip, #3128]!	; 0xc38
+    83e8:	e28fc600 	add	ip, pc, #0
+    83ec:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83f0:	e5bcfc30 	ldr	pc, [ip, #3120]!	; 0xc30
+    83f4:	e28fc600 	add	ip, pc, #0
+    83f8:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    83fc:	e5bcfc28 	ldr	pc, [ip, #3112]!	; 0xc28
+    8400:	e28fc600 	add	ip, pc, #0
+    8404:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    8408:	e5bcfc20 	ldr	pc, [ip, #3104]!	; 0xc20
+    840c:	e28fc600 	add	ip, pc, #0
+    8410:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    8414:	e5bcfc18 	ldr	pc, [ip, #3096]!	; 0xc18
+    8418:	e28fc600 	add	ip, pc, #0
+    841c:	e28cca08 	add	ip, ip, #32768	; 0x8000
+    8420:	e5bcfc10 	ldr	pc, [ip, #3088]!	; 0xc10
+
+Disassembly of section .text:
+
+00008424 <_start>:
+    8424:	e3a0b000 	mov	fp, #0
+    8428:	e3a0e000 	mov	lr, #0
+    842c:	e49d1004 	pop	{r1}		; (ldr r1, [sp], #4)
+    8430:	e1a0200d 	mov	r2, sp
+    8434:	e52d2004 	push	{r2}		; (str r2, [sp, #-4]!)
+    8438:	e52d0004 	push	{r0}		; (str r0, [sp, #-4]!)
+    843c:	e59fc010 	ldr	ip, [pc, #16]	; 8454 <_start+0x30>
+    8440:	e52dc004 	push	{ip}		; (str ip, [sp, #-4]!)
+    8444:	e59f000c 	ldr	r0, [pc, #12]	; 8458 <_start+0x34>
+    8448:	e59f300c 	ldr	r3, [pc, #12]	; 845c <_start+0x38>
+    844c:	ebffffdc 	bl	83c4 <_init+0x38>
+    8450:	ebffffd8 	bl	83b8 <_init+0x2c>
+    8454:	0000873c 	.word	0x0000873c
+    8458:	00008504 	.word	0x00008504
+    845c:	000086d4 	.word	0x000086d4
+
+00008460 <call_gmon_start>:
+    8460:	e59f3014 	ldr	r3, [pc, #20]	; 847c <call_gmon_start+0x1c>
+    8464:	e59f2014 	ldr	r2, [pc, #20]	; 8480 <call_gmon_start+0x20>
+    8468:	e08f3003 	add	r3, pc, r3
+    846c:	e7932002 	ldr	r2, [r3, r2]
+    8470:	e3520000 	cmp	r2, #0
+    8474:	012fff1e 	bxeq	lr
+    8478:	eaffffd7 	b	83dc <_init+0x50>
+    847c:	00008b90 	.word	0x00008b90
+    8480:	00000034 	.word	0x00000034
+
+00008484 <__do_global_dtors_aux>:
+    8484:	e59f3010 	ldr	r3, [pc, #16]	; 849c <__do_global_dtors_aux+0x18>
+    8488:	e5d32000 	ldrb	r2, [r3]
+    848c:	e3520000 	cmp	r2, #0
+    8490:	03a02001 	moveq	r2, #1
+    8494:	05c32000 	strbeq	r2, [r3]
+    8498:	e12fff1e 	bx	lr
+    849c:	00011040 	.word	0x00011040
+
+000084a0 <frame_dummy>:
+    84a0:	e59f0020 	ldr	r0, [pc, #32]	; 84c8 <frame_dummy+0x28>
+    84a4:	e92d4008 	push	{r3, lr}
+    84a8:	e5903000 	ldr	r3, [r0]
+    84ac:	e3530000 	cmp	r3, #0
+    84b0:	08bd8008 	popeq	{r3, pc}
+    84b4:	e59f3010 	ldr	r3, [pc, #16]	; 84cc <frame_dummy+0x2c>
+    84b8:	e3530000 	cmp	r3, #0
+    84bc:	08bd8008 	popeq	{r3, pc}
+    84c0:	e12fff33 	blx	r3
+    84c4:	e8bd8008 	pop	{r3, pc}
+    84c8:	00010f14 	.word	0x00010f14
+    84cc:	00000000 	.word	0x00000000
+
+000084d0 <stop_handler>:
+ * * 输出参数: 无
+ * *
+ * * 说明    :  无
+ * ********************************************************************/
+void stop_handler( int signum )
+{
+    84d0:	e92d4800 	push	{fp, lr}
+    84d4:	e28db004 	add	fp, sp, #4
+    84d8:	e24dd008 	sub	sp, sp, #8
+    84dc:	e50b0008 	str	r0, [fp, #-8]
+    printf("User press Ctrl+C to shut down the service.\n");
+    84e0:	e59f0014 	ldr	r0, [pc, #20]	; 84fc <stop_handler+0x2c>
+    84e4:	ebffffc8 	bl	840c <_init+0x80>
+    g_mainthread_running = 0;
+    84e8:	e59f3010 	ldr	r3, [pc, #16]	; 8500 <stop_handler+0x30>
+    84ec:	e3a02000 	mov	r2, #0
+    84f0:	e5832000 	str	r2, [r3]
+    exit(0);
+    84f4:	e3a00000 	mov	r0, #0
+    84f8:	ebffffc6 	bl	8418 <_init+0x8c>
+    84fc:	0000874c 	.word	0x0000874c
+    8500:	00011044 	.word	0x00011044
+
+00008504 <main>:
+}
+
+
+int main(int argc, char **argv)
+{
+    8504:	e92d4800 	push	{fp, lr}
+    8508:	e28db004 	add	fp, sp, #4
+    850c:	e24dd028 	sub	sp, sp, #40	; 0x28
+    8510:	e50b0028 	str	r0, [fp, #-40]	; 0x28
+    8514:	e50b102c 	str	r1, [fp, #-44]	; 0x2c
+	int keyFd,miFd;
+        struct input_event ev_key;	
+        int key_value,i=0,count;
+    8518:	e3a03000 	mov	r3, #0
+    851c:	e50b3008 	str	r3, [fp, #-8]
+
+        signal(SIGINT, stop_handler);
+    8520:	e3a00002 	mov	r0, #2
+    8524:	e59f1170 	ldr	r1, [pc, #368]	; 869c <main+0x198>
+    8528:	ebffffa8 	bl	83d0 <_init+0x44>
+
+        g_mainthread_running = 1;
+    852c:	e59f316c 	ldr	r3, [pc, #364]	; 86a0 <main+0x19c>
+    8530:	e3a02001 	mov	r2, #1
+    8534:	e5832000 	str	r2, [r3]
+
+        printf("----->\n");
+    8538:	e59f0164 	ldr	r0, [pc, #356]	; 86a4 <main+0x1a0>
+    853c:	ebffffb2 	bl	840c <_init+0x80>
+
+        keyFd = open("/dev/input/event1", 0666);
+    8540:	e59f0160 	ldr	r0, [pc, #352]	; 86a8 <main+0x1a4>
+    8544:	e59f1160 	ldr	r1, [pc, #352]	; 86ac <main+0x1a8>
+    8548:	ebffff97 	bl	83ac <_init+0x20>
+    854c:	e50b000c 	str	r0, [fp, #-12]
+
+	if (keyFd <= 0)
+    8550:	e51b300c 	ldr	r3, [fp, #-12]
+    8554:	e3530000 	cmp	r3, #0
+    8558:	ca000003 	bgt	856c <main+0x68>
+	{
+		printf("cannot open /dev/key\n");
+    855c:	e59f014c 	ldr	r0, [pc, #332]	; 86b0 <main+0x1ac>
+    8560:	ebffffa9 	bl	840c <_init+0x80>
+		return 0;
+    8564:	e3a03000 	mov	r3, #0
+    8568:	ea000048 	b	8690 <main+0x18c>
+	}
+	else
+	{
+		printf("open /dev/key ok\n");
+    856c:	e59f0140 	ldr	r0, [pc, #320]	; 86b4 <main+0x1b0>
+    8570:	ebffffa5 	bl	840c <_init+0x80>
+	}
+
+        miFd = open("/dev/key", 0666);
+    8574:	e59f013c 	ldr	r0, [pc, #316]	; 86b8 <main+0x1b4>
+    8578:	e59f112c 	ldr	r1, [pc, #300]	; 86ac <main+0x1a8>
+    857c:	ebffff8a 	bl	83ac <_init+0x20>
+    8580:	e50b0010 	str	r0, [fp, #-16]
+
+	if (miFd <= 0)
+    8584:	e51b3010 	ldr	r3, [fp, #-16]
+    8588:	e3530000 	cmp	r3, #0
+    858c:	ca000003 	bgt	85a0 <main+0x9c>
+	{
+		printf("cannot open /dev/key\n");
+    8590:	e59f0118 	ldr	r0, [pc, #280]	; 86b0 <main+0x1ac>
+    8594:	ebffff9c 	bl	840c <_init+0x80>
+		return 0;
+    8598:	e3a03000 	mov	r3, #0
+    859c:	ea00003b 	b	8690 <main+0x18c>
+	}
+	else
+	{
+		printf("open /dev/key ok\n");
+    85a0:	e59f010c 	ldr	r0, [pc, #268]	; 86b4 <main+0x1b0>
+    85a4:	ebffff98 	bl	840c <_init+0x80>
+	}
+
+
+        while(g_mainthread_running)
+    85a8:	ea000033 	b	867c <main+0x178>
+        {
+            sleep(1);
+    85ac:	e3a00001 	mov	r0, #1
+    85b0:	ebffff92 	bl	8400 <_init+0x74>
+            printf("..\n");
+    85b4:	e59f0100 	ldr	r0, [pc, #256]	; 86bc <main+0x1b8>
+    85b8:	ebffff93 	bl	840c <_init+0x80>
+//  	    ioctl(miFd,IOCTL_READKEY,NULL);
+
+            printf("sizeof input:%d\n",sizeof(struct input_event));
+    85bc:	e59f30fc 	ldr	r3, [pc, #252]	; 86c0 <main+0x1bc>
+    85c0:	e1a00003 	mov	r0, r3
+    85c4:	e3a01010 	mov	r1, #16
+    85c8:	ebffff89 	bl	83f4 <_init+0x68>
+            sleep(1);
+    85cc:	e3a00001 	mov	r0, #1
+    85d0:	ebffff8a 	bl	8400 <_init+0x74>
+            count = read(keyFd,&ev_key,sizeof(struct input_event));
+    85d4:	e24b3024 	sub	r3, fp, #36	; 0x24
+    85d8:	e51b000c 	ldr	r0, [fp, #-12]
+    85dc:	e1a01003 	mov	r1, r3
+    85e0:	e3a02010 	mov	r2, #16
+    85e4:	ebffff7f 	bl	83e8 <_init+0x5c>
+    85e8:	e50b0014 	str	r0, [fp, #-20]
+            printf("read count:%d\n",count);
+    85ec:	e59f30d0 	ldr	r3, [pc, #208]	; 86c4 <main+0x1c0>
+    85f0:	e1a00003 	mov	r0, r3
+    85f4:	e51b1014 	ldr	r1, [fp, #-20]
+    85f8:	ebffff7d 	bl	83f4 <_init+0x68>
+            for(i=0; i<(int)count/sizeof(struct input_event); i++)
+    85fc:	e3a03000 	mov	r3, #0
+    8600:	e50b3008 	str	r3, [fp, #-8]
+    8604:	ea000012 	b	8654 <main+0x150>
+            {
+                if(EV_KEY==ev_key.type)
+    8608:	e15b31bc 	ldrh	r3, [fp, #-28]	; 0xffffffe4
+    860c:	e3530001 	cmp	r3, #1
+    8610:	1a000007 	bne	8634 <main+0x130>
+                    printf("type:%d,code:%d,value:%d\n", ev_key.type,ev_key.code,ev_key.value);
+    8614:	e59f00ac 	ldr	r0, [pc, #172]	; 86c8 <main+0x1c4>
+    8618:	e15b31bc 	ldrh	r3, [fp, #-28]	; 0xffffffe4
+    861c:	e1a01003 	mov	r1, r3
+    8620:	e15b31ba 	ldrh	r3, [fp, #-26]	; 0xffffffe6
+    8624:	e1a02003 	mov	r2, r3
+    8628:	e51b3018 	ldr	r3, [fp, #-24]
+    862c:	ebffff70 	bl	83f4 <_init+0x68>
+    8630:	ea000004 	b	8648 <main+0x144>
+                else
+                    printf("type:%d\n",ev_key.type);  
+    8634:	e59f2090 	ldr	r2, [pc, #144]	; 86cc <main+0x1c8>
+    8638:	e15b31bc 	ldrh	r3, [fp, #-28]	; 0xffffffe4
+    863c:	e1a00002 	mov	r0, r2
+    8640:	e1a01003 	mov	r1, r3
+    8644:	ebffff6a 	bl	83f4 <_init+0x68>
+
+            printf("sizeof input:%d\n",sizeof(struct input_event));
+            sleep(1);
+            count = read(keyFd,&ev_key,sizeof(struct input_event));
+            printf("read count:%d\n",count);
+            for(i=0; i<(int)count/sizeof(struct input_event); i++)
+    8648:	e51b3008 	ldr	r3, [fp, #-8]
+    864c:	e2833001 	add	r3, r3, #1
+    8650:	e50b3008 	str	r3, [fp, #-8]
+    8654:	e51b2008 	ldr	r2, [fp, #-8]
+    8658:	e51b3014 	ldr	r3, [fp, #-20]
+    865c:	e1a03223 	lsr	r3, r3, #4
+    8660:	e1520003 	cmp	r2, r3
+    8664:	3affffe7 	bcc	8608 <main+0x104>
+                if(EV_KEY==ev_key.type)
+                    printf("type:%d,code:%d,value:%d\n", ev_key.type,ev_key.code,ev_key.value);
+                else
+                    printf("type:%d\n",ev_key.type);  
+            }
+            if(EV_SYN==ev_key.type)
+    8668:	e15b31bc 	ldrh	r3, [fp, #-28]	; 0xffffffe4
+    866c:	e3530000 	cmp	r3, #0
+    8670:	1a000001 	bne	867c <main+0x178>
+                 printf("syn event\n\n");
+    8674:	e59f0054 	ldr	r0, [pc, #84]	; 86d0 <main+0x1cc>
+    8678:	ebffff63 	bl	840c <_init+0x80>
+	{
+		printf("open /dev/key ok\n");
+	}
+
+
+        while(g_mainthread_running)
+    867c:	e59f301c 	ldr	r3, [pc, #28]	; 86a0 <main+0x19c>
+    8680:	e5933000 	ldr	r3, [r3]
+    8684:	e3530000 	cmp	r3, #0
+    8688:	1affffc7 	bne	85ac <main+0xa8>
+            }
+            if(EV_SYN==ev_key.type)
+                 printf("syn event\n\n");
+
+        }
+	return 0;
+    868c:	e3a03000 	mov	r3, #0
+}
+    8690:	e1a00003 	mov	r0, r3
+    8694:	e24bd004 	sub	sp, fp, #4
+    8698:	e8bd8800 	pop	{fp, pc}
+    869c:	000084d0 	.word	0x000084d0
+    86a0:	00011044 	.word	0x00011044
+    86a4:	00008778 	.word	0x00008778
+    86a8:	00008780 	.word	0x00008780
+    86ac:	000001b6 	.word	0x000001b6
+    86b0:	00008794 	.word	0x00008794
+    86b4:	000087ac 	.word	0x000087ac
+    86b8:	000087c0 	.word	0x000087c0
+    86bc:	000087cc 	.word	0x000087cc
+    86c0:	000087d0 	.word	0x000087d0
+    86c4:	000087e4 	.word	0x000087e4
+    86c8:	000087f4 	.word	0x000087f4
+    86cc:	00008810 	.word	0x00008810
+    86d0:	0000881c 	.word	0x0000881c
+
+000086d4 <__libc_csu_init>:
+    86d4:	e92d45f8 	push	{r3, r4, r5, r6, r7, r8, sl, lr}
+    86d8:	e59f5050 	ldr	r5, [pc, #80]	; 8730 <__libc_csu_init+0x5c>
+    86dc:	e59fa050 	ldr	sl, [pc, #80]	; 8734 <__libc_csu_init+0x60>
+    86e0:	e1a06000 	mov	r6, r0
+    86e4:	e1a07001 	mov	r7, r1
+    86e8:	e1a08002 	mov	r8, r2
+    86ec:	ebffff26 	bl	838c <_init>
+    86f0:	e59f3040 	ldr	r3, [pc, #64]	; 8738 <__libc_csu_init+0x64>
+    86f4:	e065a00a 	rsb	sl, r5, sl
+    86f8:	e08f3003 	add	r3, pc, r3
+    86fc:	e1b0a14a 	asrs	sl, sl, #2
+    8700:	e0835005 	add	r5, r3, r5
+    8704:	08bd85f8 	popeq	{r3, r4, r5, r6, r7, r8, sl, pc}
+    8708:	e3a04000 	mov	r4, #0
+    870c:	e4953004 	ldr	r3, [r5], #4
+    8710:	e1a00006 	mov	r0, r6
+    8714:	e1a01007 	mov	r1, r7
+    8718:	e1a02008 	mov	r2, r8
+    871c:	e2844001 	add	r4, r4, #1
+    8720:	e12fff33 	blx	r3
+    8724:	e154000a 	cmp	r4, sl
+    8728:	3afffff7 	bcc	870c <__libc_csu_init+0x38>
+    872c:	e8bd85f8 	pop	{r3, r4, r5, r6, r7, r8, sl, pc}
+    8730:	ffffff0c 	.word	0xffffff0c
+    8734:	ffffff10 	.word	0xffffff10
+    8738:	00008900 	.word	0x00008900
+
+0000873c <__libc_csu_fini>:
+    873c:	e12fff1e 	bx	lr
+
+Disassembly of section .fini:
+
+00008740 <_fini>:
+    8740:	e92d4008 	push	{r3, lr}
+    8744:	e8bd8008 	pop	{r3, pc}

@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AC490Result	app/key_app.h	/^}AC490Result;$/;"	t	typeref:enum:__anon1
+AC490Struct	app/key_app.h	/^typedef struct AC490Struct$/;"	s
+AC490Struct	app/key_app.h	/^}AC490Struct;$/;"	t	typeref:struct:AC490Struct
+AC490_NOT_ON_LINE	app/key_app.h	/^    AC490_NOT_ON_LINE,$/;"	e	enum:__anon1
+AC490_ON_LINE	app/key_app.h	/^    AC490_ON_LINE,$/;"	e	enum:__anon1
+ADDRESS	key.h	25;"	d
+CC	Makefile	/^CC = $(CROSS_COMPILE)gcc$/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE	?= ppc_6xx-$/;"	m
+DSP1IMM	app/key_app.h	/^   unsigned int *DSP1IMM;$/;"	m	struct:sysInfo
+DSP1_MCBSP_FAIL	app/key_app.h	/^    DSP1_MCBSP_FAIL,$/;"	e	enum:__anon2
+DSP1_NOT_ON_LINE	app/key_app.h	/^    DSP1_NOT_ON_LINE,$/;"	e	enum:__anon2
+DSP2IMM	app/key_app.h	/^   unsigned int *DSP2IMM;$/;"	m	struct:sysInfo
+DSP2_MCBSP_FAIL	app/key_app.h	/^    DSP2_MCBSP_FAIL,$/;"	e	enum:__anon2
+DSP2_NOT_ON_LINE	app/key_app.h	/^    DSP2_NOT_ON_LINE,$/;"	e	enum:__anon2
+DSPResult	app/key_app.h	/^}DSPResult;$/;"	t	typeref:enum:__anon2
+DSP_H	app/key_app.h	23;"	d
+DSP_MCBSP_ALL_FAIL	app/key_app.h	/^    DSP_MCBSP_ALL_FAIL,$/;"	e	enum:__anon2
+DSP_MCBSP_OK	app/key_app.h	/^    DSP_MCBSP_OK,$/;"	e	enum:__anon2
+DSP_ON_LINE	app/key_app.h	/^    DSP_ON_LINE,$/;"	e	enum:__anon2
+GPNCON_OFFSET	key.h	27;"	d
+GPNDAT_OFFSET	key.h	28;"	d
+GPNPUD_OFFSET	key.h	29;"	d
+IMM32	key.c	/^static void __iomem *IMM32;$/;"	v	file:
+IOCTL_CMD_LOCALBUS_DSP_DOWNLOAD	app/key_app.h	59;"	d
+IOCTL_CMD_RESET_DSP	app/key_app.h	60;"	d
+IOCTL_READKEY	app/key_app.c	10;"	d	file:
+IOCTL_READKEY	key.h	32;"	d
+KERNELDIR	Makefile	/^KERNELDIR = \/home\/xl.lin\/workspace\/6410\/Linux\/linux-2.6.38$/;"	m
+KEY_DEVICE_NAME	key.c	46;"	d	file:
+KEY_H	key.h	23;"	d
+PWD	Makefile	/^PWD := $(shell pwd)$/;"	m
+addr	app/key_app.h	/^    long addr;$/;"	m	struct:AC490Struct
+dev	key.c	/^struct input_dev *dev;		 $/;"	v	typeref:struct:input_dev
+dev_exit	key.c	/^module_exit(dev_exit);$/;"	v
+dev_exit	key.c	/^static void __exit dev_exit(void)$/;"	f	file:
+dev_init	key.c	/^module_init(dev_init);$/;"	v
+dev_init	key.c	/^static int __init dev_init(void)$/;"	f	file:
+fd_dsp	app/key_app.h	/^   int fd_dsp;$/;"	m	struct:sysInfo
+fd_local	app/key_app.h	/^   int fd_local;$/;"	m	struct:sysInfo
+g_mainthread_running	app/key_app.c	/^int g_mainthread_running = 0; \/* 程序运行标记 *\/$/;"	v
+inputdev	key.h	/^    struct input_dev *inputdev;$/;"	m	struct:key_dev	typeref:struct:key_dev::input_dev
+keyDev	key.c	/^struct key_dev keyDev;$/;"	v	typeref:struct:key_dev
+key_dev	key.h	/^typedef struct key_dev$/;"	s
+key_dev	key.h	/^}key_dev;$/;"	t	typeref:struct:key_dev
+key_ioctl	key.c	/^long key_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)$/;"	f
+key_open	key.c	/^int key_open(struct inode *inode, struct file *filp)$/;"	f
+key_ops	key.c	/^struct file_operations key_ops = {$/;"	v	typeref:struct:file_operations
+key_read	key.c	/^ssize_t key_read(struct file *filp,char __user *buf,size_t count,loff_t *ppos)$/;"	f
+key_release	key.c	/^int key_release(struct inode *inode, struct file *filp)$/;"	f
+key_write	key.c	/^ssize_t key_write(struct file *filp,const char __user *buf,size_t count,loff_t *ppos)$/;"	f
+main	app/key_app.c	/^int main(int argc, char **argv)$/;"	f
+misc	key.c	/^static struct miscdevice misc = {$/;"	v	typeref:struct:miscdevice	file:
+obj-m	Makefile	/^obj-m := key.o$/;"	m
+result	app/key_app.h	/^    int result;$/;"	m	struct:AC490Struct
+stop_handler	app/key_app.c	/^void stop_handler( int signum )$/;"	f
+sysInfo	app/key_app.h	/^typedef struct sysInfo$/;"	s
+sysInfo	app/key_app.h	/^}sysInfo;$/;"	t	typeref:struct:sysInfo

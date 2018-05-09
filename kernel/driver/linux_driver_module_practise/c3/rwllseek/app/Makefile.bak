@@ -1,0 +1,7 @@
+all:x
+x:app-readwrite.o
+	ppc_6xx-gcc -g app-readwrite.c -o app-readwrite
+	cp app-readwrite	/media/disk/lxl
+clean:
+	rm -f *~ *o
+
