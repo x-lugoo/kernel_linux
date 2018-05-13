@@ -36,11 +36,13 @@
     otherwise the "sectorsize" is determined by the underlying hardware.
     Default values are: sector=512 Bytes, block=4 kB
  */
-
+#define DEBUG_BLOCK_SIZE 1024
+#define ARR_SIZE (DEBUG_BLOCK_SIZE*3)
 static int major;
 static struct ramdisk_dev* device_arr = NULL;
 static struct hd_geometry rd_geo;   // hdreg.h
 
+char buf[ARR_SIZE];
 static int user_disk_size = 64;
 module_param(user_disk_size, int, 0); //  linux/moduleparam.h, http://www.tldp.org/LDP/lkmpg/2.6/html/x323.html
 MODULE_PARM_DESC (user_disk_size, "Size in MiB the RamDisk should use.\n");
@@ -123,7 +125,6 @@ static void rd_transfer(struct ramdisk_dev* rd, unsigned long sector, unsigned l
 {
     unsigned long offset = sector * SECTOR_SIZE;
     unsigned long nbytes = nsectors * SECTOR_SIZE;
-    char buf[100];
     int i;
 
     //printk(KERN_INFO "%s (%d)\n",__func__,__LINE__);
@@ -134,15 +135,15 @@ static void rd_transfer(struct ramdisk_dev* rd, unsigned long sector, unsigned l
     }
     if(write){
 	//printk(KERN_INFO "write byte offset=%ld size=%ld\n",offset,nbytes);
-	for(i = 0;i < 30;i++)
-		snprintf(buf+ i*3,100,"%02X ",buffer[i]);
+	for(i = 0;i < DEBUG_BLOCK_SIZE;i++)
+		snprintf(buf+ i*3,ARR_SIZE,"%02X ",buffer[i]);
 	printk(KERN_INFO "write: %s\n",buf);
 	memcpy(rd->data + offset, buffer, nbytes);
     }
     else{
 	//printk(KERN_INFO "read byte offset=%ld size=%ld\n",offset,nbytes);
-	for(i = 0;i < 30;i++)
-		snprintf(buf+ i*3,100,"%02X ",buffer[i]);
+	for(i = 0;i < DEBUG_BLOCK_SIZE;i++)
+		snprintf(buf+ i*3,ARR_SIZE,"%02X ",buffer[i]);
 	printk(KERN_INFO "read: %s\n",buf);
         memcpy(buffer, rd->data + offset, nbytes);
     }

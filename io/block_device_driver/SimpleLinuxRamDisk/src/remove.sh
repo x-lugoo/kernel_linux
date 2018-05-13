@@ -7,7 +7,7 @@
 # Systemprogrammierung -- WS 2012/13
 # HTWK
 
-mountdir=/media/RamDisk
+mountdir=/mnt/fs
 modname=ramdisk
 
 echo "Unmounting..."
