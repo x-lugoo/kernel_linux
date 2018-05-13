@@ -2,7 +2,8 @@
 
 #define SIMPLEFS_MAGIC 0x10032013
 #define SIMPLEFS_DEFAULT_BLOCK_SIZE 4096
-#define SIMPLEFS_FILENAME_MAXLEN 255
+//#define SIMPLEFS_FILENAME_MAXLEN 255
+#define SIMPLEFS_FILENAME_MAXLEN 25 /* for test*/
 #define SIMPLEFS_START_INO 10
 /**
  * Reserver inodes for super block, inodestore

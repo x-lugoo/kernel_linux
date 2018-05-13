@@ -36,7 +36,7 @@
     otherwise the "sectorsize" is determined by the underlying hardware.
     Default values are: sector=512 Bytes, block=4 kB
  */
-#define DEBUG_BLOCK_SIZE 1024
+#define DEBUG_BLOCK_SIZE 300
 #define ARR_SIZE (DEBUG_BLOCK_SIZE*3)
 static int major;
 static struct ramdisk_dev* device_arr = NULL;
