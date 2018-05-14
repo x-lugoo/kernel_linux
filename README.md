@@ -1,2 +1,2 @@
 # c_training
-high quality c code
+high quality kernel-linux-relative code
