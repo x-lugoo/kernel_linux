@@ -1,0 +1,23 @@
+1. Basic development tools
+	sudo yum -y groupinstall "Development Tools"
+2.wget 
+	sudo yum -y install wget
+3.patch 
+	sudo yum install -y patch
+4.ncurses-devel
+	sudo yum install -y ncurses-devel
+5.zlib-devel
+	sudo yum install -y zlib-devel
+6.bison and byacc
+	yum install -y bison
+	yum install ¨Cy byacc
+7.kernel debug info packages, if required.
+
+for 64 bit x86 kernel,
+	debuginfo-install kernel
+for 32 bit x86 kernel,
+	debuginfo-install kernel-PAE
+Get source code (or yum install crash)
+	git clone https://github.com/crash-utility/crash.git
+Start to build 
+	cd crash; make all

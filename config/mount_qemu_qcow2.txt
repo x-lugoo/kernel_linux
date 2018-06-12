@@ -1,0 +1,13 @@
+http://ask.xmodulo.com/mount-qcow2-disk-image-linux.html
+
+-----------
+for example
+sudo apt-get install qemu-utils 
+sudo modprobe nbd max_part=8
+sudo qemu-nbd --connect=/dev/nbd0 /path/to/qcow2/image 
+sudo fdisk /dev/nbd0 -l 
+sudo mount /dev/nbd0p1 /mnt 
+
+
+sudo umount /mnt
+sudo qemu-nbd --disconnect /dev/nbd0 
