@@ -10,8 +10,11 @@
 	sudo yum install -y zlib-devel
 6.bison and byacc
 	yum install -y bison
-	yum install ¨Cy byacc
+	yum install -y byacc
 7.kernel debug info packages, if required.
+
+sudo yum install yum-utils
+
 
 for 64 bit x86 kernel,
 	debuginfo-install kernel

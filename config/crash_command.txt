@@ -1,0 +1,4 @@
+files -c [pid]   /*check the context of process*/
+file -p [(inode address)]  /*check page cache*/
+foreach files -c -R 2015-07-03    /*check the file including "2015-07-03"*/
+rd -p -a [physical address of page ] 4096 | tail -12    /*check the content of the text in memory*/

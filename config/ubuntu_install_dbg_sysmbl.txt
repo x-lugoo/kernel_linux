@@ -6,3 +6,7 @@ install header_file_package
 
 get source-code
 	apt-get source linux-image-$(uname -r)
+	
+
+
+refer to :http://teawater.github.io/kgtp/kgtpcn.html#__RefHeading__10130_71337508
