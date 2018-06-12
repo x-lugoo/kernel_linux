@@ -1,0 +1,8 @@
+wget http://ddebs.ubuntu.com/pool/main/l/linux/linux-image-$(uname -r)-dbgsym_$(dpkg -s linux-image-$(uname -r) | grep ^Version: | sed 's/Version: //')_$(uname -i | sed 's/x86_64/amd64/').ddeb
+sudo dpkg -i linux-image-$(uname -r)-dbgsym_$(dpkg -s linux-image-$(uname -r) | grep ^Version: | sed 's/Version: //')_$(uname -i | sed 's/x86_64/amd64/').ddeb
+
+install header_file_package
+	sudo apt-get install linux-headers-generic
+
+get source-code
+	apt-get source linux-image-$(uname -r)
