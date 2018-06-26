@@ -1,4 +1,4 @@
-obj-m:=jbase.o
+obj-m:=kobj.o
 KERNELDIR:=/lib/modules/$(shell uname -r)/build
 PWD:=$(shell pwd)
 all:
