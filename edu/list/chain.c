@@ -9,7 +9,7 @@ struct notifier_block{
 };
 
 
-struct notifier_block *first;
+static struct notifier_block *first;
 
 
 int notifier_chain_register(struct notifier_block **list,struct notifier_block *n)
@@ -36,6 +36,7 @@ int entry_notifier_chain(struct notifier_block *head)
 
 int main(void)
 {
+	int ret;
 	struct notifier_block *new1;
 	struct notifier_block *new2;
 	struct notifier_block *new3;
@@ -44,34 +45,45 @@ int main(void)
 
 	
 	first = malloc(sizeof(notifier_chain_register));
-	printf("first %p\n",first);
-	if(first == NULL)
-		return -1;
+	if(first == NULL){
+		ret = -1;
+		goto err;
+	}
 	first->count = 0;
 	first->priority = 10;
 	new1 = malloc(sizeof(notifier_chain_register));
-	if(new1 == NULL)
-		return -1;
+	if(new1 == NULL){
+		ret = -1;
+		goto err;
+	}
 	new1->count = 1;
 	new1->priority = 2;
 	new2 = malloc(sizeof(notifier_chain_register));
-	if(new2 == NULL)
-		return -1;
+	if(new2 == NULL){
+		ret = -1;
+		goto err;
+	}
 	new2->count = 2;
 	new2->priority = 4;
 	new3 = malloc(sizeof(notifier_chain_register));
-	if(new3 == NULL)
-		return -1;
+	if(new3 == NULL){
+		ret = -1;
+		goto err;
+	}
 	new3->count = 3;
 	new3->priority = 2;
 	new4 = malloc(sizeof(notifier_chain_register));
-	if(new4 == NULL)
-		return -1;
+	if(new4 == NULL){
+		ret = -1;
+		goto err;
+	}
 	new4->count = 4;
 	new4->priority = 2;
 	new5 = malloc(sizeof(notifier_chain_register));
-	if(new5 == NULL)
-		return -1;
+	if(new5 == NULL){
+		ret = -1;
+		goto err;
+	}
 	new5->count = 5;
 	new5->priority = 2;
 
@@ -83,6 +95,8 @@ int main(void)
 
 	entry_notifier_chain(first);
 	return 0;
+err:
+	return ret;
 }
 
 
